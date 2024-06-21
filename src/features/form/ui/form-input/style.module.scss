@@ -1,0 +1,38 @@
+.label {
+  width: 100%;
+
+  span {
+    font-size: 14px;
+  }
+
+  span:first-child {
+    margin-bottom: 4px;
+    color: var(--root-color-white);
+  }
+  span:last-child {
+    line-height: 24px;
+    color: #FF0000;
+  }
+}
+
+.input {
+  transition: var(--root-transition-100);
+  border: 1px solid var(--root-color-neutral-100);
+  background: var(--root-color-neutral-100);
+  width: 100%;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.input:focus {
+  border-color: #3893FF;
+}
+.label.error .input {
+  border-color: #FF0000;
+}
+
+.input::placeholder {
+  opacity: .5;
+  color: var(--root-color-neutral-000);
+}
